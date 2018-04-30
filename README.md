@@ -35,8 +35,8 @@ Use in a Vue template like:
 
 Before:
 
-![](http://yo.bkwld.com/1K2J1r2w0R1x/Image%202018-04-30%20at%204.08.20%20PM.png)
+![](http://yo.bkwld.com/243A0w0t2D1h/Image%202018-04-30%20at%204.17.58%20PM.png)
 
 After:
 
-![](http://yo.bkwld.com/293d3B0d2C2z/Image%202018-04-30%20at%204.08.56%20PM.png)
+![](http://yo.bkwld.com/3w3v441G1F0q/Image%202018-04-30%20at%204.18.18%20PM.png)
