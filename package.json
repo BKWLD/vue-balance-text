@@ -1,6 +1,6 @@
 {
   "name": "vue-balance-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue directive that implements balance-text",
   "main": "index.js",
   "scripts": {
