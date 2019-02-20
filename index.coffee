@@ -1,6 +1,6 @@
-Vue = require 'vue'
-balanceText = require 'balance-text'
-module.exports =
+import Vue from 'vue'
+import balanceText from 'balance-text'
+export default
 
 	# Add balance text to the element
 	bind: (el) ->
