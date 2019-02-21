@@ -1,4 +1,5 @@
 Vue = require 'vue'
+Vue = Vue.default if Vue.__esModule
 balanceText = require 'balance-text'
 module.exports =
 

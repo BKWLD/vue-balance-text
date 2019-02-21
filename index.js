@@ -6,6 +6,10 @@
 
   Vue = require('vue');
 
+  if (Vue.__esModule) {
+    Vue = Vue.default;
+  }
+
   balanceText = require('balance-text');
 
   module.exports = {
