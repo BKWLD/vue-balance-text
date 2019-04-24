@@ -14,24 +14,40 @@
 
   module.exports = {
     // Add balance text to the element
-    bind: function bind(el) {
+    bind: function bind(el, _ref) {
+      var modifiers = _ref.modifiers;
+
+      var target;
+
+      // Support children's modifier
+      target = modifiers.children ? el.children : el;
+
+      // Add balance text to the element
       Vue.nextTick(function () {
-        return balanceText(el, {
+        return balanceText(target, {
           watch: true
         });
       });
       // Manually fire again later, like after styles are injected by Webpack
       return setTimeout(function () {
-        return balanceText(el);
+        return balanceText(target);
       }, 300);
     },
     // Update when contents change
-    componentUpdated: function componentUpdated(el) {
-      return balanceText(el);
+    componentUpdated: function componentUpdated(el, _ref2) {
+      var modifiers = _ref2.modifiers;
+
+      var target;
+      target = modifiers.children ? el.children : el;
+      return balanceText(target);
     },
     // Remove watching
-    unbind: function unbind(el) {
-      return balanceText(el, {
+    unbind: function unbind(el, _ref3) {
+      var modifiers = _ref3.modifiers;
+
+      var target;
+      target = modifiers.children ? el.children : el;
+      return balanceText(target, {
         watch: false
       });
     }

@@ -4,14 +4,23 @@ balanceText = require 'balance-text'
 module.exports =
 
 	# Add balance text to the element
-	bind: (el) ->
-		Vue.nextTick -> balanceText el, watch: true
+	bind: (el, { modifiers }) ->
+		
+		# Support children's modifier
+		target = if modifiers.children then el.children else el
+		
+		# Add balance text to the element
+		Vue.nextTick -> balanceText target, watch: true
 
 		# Manually fire again later, like after styles are injected by Webpack
-		setTimeout (-> balanceText el), 300
+		setTimeout (-> balanceText target), 300
 
 	# Update when contents change
-	componentUpdated: (el) -> balanceText el
+	componentUpdated: (el, { modifiers }) -> 
+		target = if modifiers.children then el.children else el
+		balanceText target
 
 	# Remove watching
-	unbind: (el) -> balanceText el, watch: false
+	unbind: (el, { modifiers }) -> 
+		target = if modifiers.children then el.children else el
+		balanceText target, watch: false

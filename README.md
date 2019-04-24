@@ -31,6 +31,12 @@ Use in a Vue template like:
 <h1 v-balance-text>A long title with many words that will wrap to multiple lines</h1>
 ```
 
+When rendering HTML with `v-html`, you need to tell v-balance-text to operate on the children vs on the element it's attached to:
+
+```html
+<div v-balance-text.children v-html='body'></div>
+```
+
 ## Example
 
 Before:
