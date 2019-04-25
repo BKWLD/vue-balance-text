@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "coffee -ct index.coffee",
+    "version": "yarn build && git add -A",
+    "postversion": "git push --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
