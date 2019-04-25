@@ -20,7 +20,7 @@
       var target;
 
       // Support children's modifier
-      target = modifiers.children ? el.children : el;
+      target = modifiers.children ? Array.from(el.children) : el;
 
       // Add balance text to the element
       Vue.nextTick(function () {
@@ -38,7 +38,7 @@
       var modifiers = _ref2.modifiers;
 
       var target;
-      target = modifiers.children ? el.children : el;
+      target = modifiers.children ? Array.from(el.children) : el;
       return balanceText(target);
     },
     // Remove watching
@@ -46,7 +46,7 @@
       var modifiers = _ref3.modifiers;
 
       var target;
-      target = modifiers.children ? el.children : el;
+      target = modifiers.children ? Array.from(el.children) : el;
       return balanceText(target, {
         watch: false
       });
