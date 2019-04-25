@@ -7,7 +7,7 @@ module.exports =
 	bind: (el, { modifiers }) ->
 		
 		# Support children's modifier
-		target = if modifiers.children then el.children else el
+		target = if modifiers.children then Array.from el.children else el
 		
 		# Add balance text to the element
 		Vue.nextTick -> balanceText target, watch: true
@@ -17,10 +17,10 @@ module.exports =
 
 	# Update when contents change
 	componentUpdated: (el, { modifiers }) -> 
-		target = if modifiers.children then el.children else el
+		target = if modifiers.children then Array.from el.children else el
 		balanceText target
 
 	# Remove watching
 	unbind: (el, { modifiers }) -> 
-		target = if modifiers.children then el.children else el
+		target = if modifiers.children then Array.from el.children else el
 		balanceText target, watch: false
