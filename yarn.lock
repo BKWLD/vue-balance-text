@@ -468,9 +468,10 @@ babylon@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
 
-balance-text@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/balance-text/-/balance-text-3.2.0.tgz#e99799feed8b2ff9f078c295f28a776fd311d019"
+balance-text@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/balance-text/-/balance-text-3.2.1.tgz#dead6553944b6e4e5f616a33423a44e93558dfd9"
+  integrity sha512-2mZCyeL1PgRaY20mHx9ScC7waurtCTf1htGChfEmFImZRztc52fB/VIWN+8VAPMKWpCuAAzxzhthHFeKEmbDlw==
 
 balanced-match@^1.0.0:
   version "1.0.0"
