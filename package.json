@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/BKWLD/vue-balance-text#readme",
   "dependencies": {
-    "balance-text": "3.2.1"
+    "balance-text": "https://github.com/BKWLD/balance-text#add-aria-hidden-attribute"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
