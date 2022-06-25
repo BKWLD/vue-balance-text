@@ -4,7 +4,11 @@ A Vue directive that implements [balance-text](https://github.com/adobe-webplatf
 
 ## Install
 
-`yarn add vue-balance-text or npm install --save vue-balance-text`
+```sh
+yarn add vue-balance-text
+# or
+npm install --save vue-balance-text
+```
 
 #### Vue
 
