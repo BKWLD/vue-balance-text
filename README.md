@@ -45,8 +45,8 @@ When rendering HTML with `v-html`, you need to tell v-balance-text to operate on
 
 Before:
 
-![](http://yo.bkwld.com/243A0w0t2D1h/Image%202018-04-30%20at%204.17.58%20PM.png)
+![](https://f.v1.n0.cdn.getcloudapp.com/items/3H0E09100O3443472P1S/Image%202018-04-30%20at%204.17.58%20PM.png)
 
 After:
 
-![](http://yo.bkwld.com/3w3v441G1F0q/Image%202018-04-30%20at%204.18.18%20PM.png)
+![](https://f.v1.n0.cdn.getcloudapp.com/items/2h0e2x312G2D1W2J2Y2J/Image%202018-04-30%20at%204.18.18%20PM.png)
